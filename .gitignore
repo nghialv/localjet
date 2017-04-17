@@ -1,0 +1,7 @@
+### CodeShip
+codeship.aes
+.codeship/codeship.aes
+.codeship/gcloud.env
+.codeship/gcr.env
+.codeship/*.dockercfg
+.coverprofile

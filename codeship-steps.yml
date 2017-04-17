@@ -1,0 +1,5 @@
+- type: serial
+  steps:
+    - name: integration-mongodb
+      service: dep-mongodb
+      command: bash -c "sleep 15 && go test github.com/nghialv/localjet/mongodb"

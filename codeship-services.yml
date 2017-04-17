@@ -1,0 +1,16 @@
+dep-mongodb:
+    build:
+        context: .codeship
+        dockerfile: testrunner.Dockerfile
+    working_dir: /go/src/github.com/nghialv/localjet
+    environment:
+        MONGODB_URL: mongodb://mongodb:27017
+    volumes:
+        - ./:/go/src/github.com/nghialv/localjet
+    links:
+        - mongodb
+
+mongodb:
+    build:
+        context: .codeship
+        dockerfile: mongodb.Dockerfile
