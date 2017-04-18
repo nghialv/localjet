@@ -11,6 +11,4 @@ dep-mongodb:
         - mongodb
 
 mongodb:
-    build:
-        context: .codeship
-        dockerfile: mongodb.Dockerfile
+    image: mongo:3.4.3
