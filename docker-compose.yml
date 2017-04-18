@@ -1,0 +1,14 @@
+version: '3'
+services:
+  testrunner:
+    build: .
+    working_dir: /go/src/github.com/nghialv/localjet
+    environment:
+        MONGODB_URL: mongodb://mongodb:27017
+    volumes:
+    - .:/go/src/github.com/nghialv/localjet
+    depends_on:
+    - mongodb
+
+  mongodb:
+    image: mongo:3.4.3
