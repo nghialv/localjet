@@ -1,0 +1,221 @@
+[
+    {
+        "Id": "a317deafd8ac475e1bef5e7323aa2d07d786704914a04a1245b902c4f276fc29",
+        "Created": "2017-04-21T02:03:39.442718845Z",
+        "Path": "bash",
+        "Args": [
+            "-c",
+            "sleep 15 && go test -v github.com/nghialv/localjet/mongodb"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 4778,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2017-04-21T02:03:40.018822838Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:651dc3ae711dc8b8d5f51a59af7d518328a9729f1e67159a4f9abf9113939340",
+        "ResolvConfPath": "/var/lib/docker/containers/a317deafd8ac475e1bef5e7323aa2d07d786704914a04a1245b902c4f276fc29/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/a317deafd8ac475e1bef5e7323aa2d07d786704914a04a1245b902c4f276fc29/hostname",
+        "HostsPath": "/var/lib/docker/containers/a317deafd8ac475e1bef5e7323aa2d07d786704914a04a1245b902c4f276fc29/hosts",
+        "LogPath": "/var/lib/docker/containers/a317deafd8ac475e1bef5e7323aa2d07d786704914a04a1245b902c4f276fc29/a317deafd8ac475e1bef5e7323aa2d07d786704914a04a1245b902c4f276fc29-json.log",
+        "Name": "/jet-dep-mongodb-integration-mongodb",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "/Users/a13705/Documents/code/src/github.com/abema/localjet:/go/src/github.com/nghialv/localjet:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "default",
+            "PortBindings": null,
+            "RestartPolicy": {
+                "Name": "",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "CapAdd": null,
+            "CapDrop": null,
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "",
+            "Cgroup": "",
+            "Links": [
+                "/jet-mongodb-integration-mongodb:/jet-dep-mongodb-integration-mongodb/mongodb"
+            ],
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DiskQuota": 0,
+            "KernelMemory": 0,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": -1,
+            "OomKillDisable": false,
+            "PidsLimit": 0,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0
+        },
+        "GraphDriver": {
+            "Name": "overlay2",
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/6b1fda3164894115741bad3cb6cb79263a2ce8372a43a5b7fb1a4500af6dff08-init/diff:/var/lib/docker/overlay2/3d0eca6d95ec102a5fef931993fe2d3f90c468fd3853d7b1795c9f41158a7ba6/diff:/var/lib/docker/overlay2/342afe97f2624fd56bac69becf802770872f8107d78b56b5a194c8145e06ebc5/diff:/var/lib/docker/overlay2/3f5da43d0415581eda5bc5513ed1bef60e2c80469fd4558841d98b9563f20788/diff:/var/lib/docker/overlay2/3bc9bdcab20af9b5415daf50614c42fd39c588efd6350299e2ee3867d6fc03d2/diff:/var/lib/docker/overlay2/855ddb504600ef1103e980684c1b7305774de9175cbf19378d9acfdd639f0476/diff:/var/lib/docker/overlay2/ade5e7850a97122be3916fdc5ad08255cc38dfb8dd7ff786ed3c8a752d1392c6/diff:/var/lib/docker/overlay2/530a8f9b225fc9bd92ead20897ab8ca2f01999af62e7a6ff7f12640140bc7924/diff:/var/lib/docker/overlay2/e4290ffcc5c305270a12f864db852ef0544547390268f1b1576b995144298e33/diff",
+                "MergedDir": "/var/lib/docker/overlay2/6b1fda3164894115741bad3cb6cb79263a2ce8372a43a5b7fb1a4500af6dff08/merged",
+                "UpperDir": "/var/lib/docker/overlay2/6b1fda3164894115741bad3cb6cb79263a2ce8372a43a5b7fb1a4500af6dff08/diff",
+                "WorkDir": "/var/lib/docker/overlay2/6b1fda3164894115741bad3cb6cb79263a2ce8372a43a5b7fb1a4500af6dff08/work"
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "0e88f3b6190f4c4b73edccf827dc7745f4ba7258925ed97cbbbb97368a5b7956",
+                "Source": "/var/lib/docker/volumes/0e88f3b6190f4c4b73edccf827dc7745f4ba7258925ed97cbbbb97368a5b7956/_data",
+                "Destination": "/Users/a13705/Documents/code/src/github.com/abema/localjet:/go/src/github.com/nghialv/localjet",
+                "Driver": "local",
+                "Mode": "",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Type": "bind",
+                "Source": "/Users/a13705/Documents/code/src/github.com/abema/localjet",
+                "Destination": "/go/src/github.com/nghialv/localjet",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "a317deafd8ac",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": true,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "CI_NAME=",
+                "CI_BRANCH=",
+                "CI_PROJECT_ID=",
+                "CI_COMMIT_ID=",
+                "CI_TIMESTAMP=1492740217",
+                "CI_STRING_TIME=2017-04-21 02:03:37.754358149 +0000 UTC",
+                "CI_COMMITTER_USERNAME=",
+                "CI_COMMITTER_EMAIL=",
+                "CI_COMMITTER_NAME=",
+                "CI_COMMIT_MESSAGE=",
+                "CI_REPO_NAME=",
+                "CI_COMMIT_DESCRIPTION=",
+                "CI=false",
+                "CI_BUILD_ID=",
+                "MONGODB_URL=mongodb://mongodb:27017",
+                "PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "GOLANG_VERSION=1.7.4",
+                "GOLANG_SRC_URL=https://golang.org/dl/go1.7.4.src.tar.gz",
+                "GOLANG_SRC_SHA256=4c189111e9ba651a2bb3ee868aa881fab36b2f2da3409e80885ca758a6b614cc",
+                "GOPATH=/go"
+            ],
+            "Cmd": [
+                "bash",
+                "-c",
+                "sleep 15 && go test -v github.com/nghialv/localjet/mongodb"
+            ],
+            "Image": "codeship_dep-mongodb",
+            "Volumes": {
+                "/Users/a13705/Documents/code/src/github.com/abema/localjet:/go/src/github.com/nghialv/localjet": {}
+            },
+            "WorkingDir": "/go/src/github.com/nghialv/localjet",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {}
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "be412a6ae2f7693ed992d0e2b207925cc09595b98fda96d6d706bf7d98e28896",
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "Ports": {},
+            "SandboxKey": "/var/run/docker/netns/be412a6ae2f7",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "4c2a696d0b0287192b4b989161e1d2490f220661dccb2b13d2774fa2e27dd5b5",
+            "Gateway": "172.17.0.1",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "172.17.0.3",
+            "IPPrefixLen": 16,
+            "IPv6Gateway": "",
+            "MacAddress": "02:42:ac:11:00:03",
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "NetworkID": "557d83fa565a4ce92e8dfe0cb8e93c517cc301ecb7dbf299f2ab6a2fbfae73f0",
+                    "EndpointID": "4c2a696d0b0287192b4b989161e1d2490f220661dccb2b13d2774fa2e27dd5b5",
+                    "Gateway": "172.17.0.1",
+                    "IPAddress": "172.17.0.3",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "02:42:ac:11:00:03"
+                }
+            }
+        }
+    }
+]
