@@ -8,10 +8,12 @@ import (
 )
 
 func initClient() error {
+	fmt.Println("LOCALJET: Will dial mongo")
 	_, err := mgo.DialWithTimeout("mongodb://mongodb:27017", 30*time.Second)
 	if err != nil {
-		fmt.Println("Failed to dial mongo. ", err.Error())
+		fmt.Println("LOCALJET: Failed to dial mongo. ", err.Error())
 		return err
 	}
+	fmt.Println("LOCALJET: Succeeded to dial mongo")
 	return nil
 }
