@@ -2,8 +2,6 @@ dep-mongodb:
     build:
         dockerfile: Dockerfile
     working_dir: /go/src/github.com/nghialv/localjet
-    environment:
-        MONGODB_URL: mongodb://mongodb:27017
     volumes:
         - ./:/go/src/github.com/nghialv/localjet
     links:
