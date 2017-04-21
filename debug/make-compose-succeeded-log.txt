@@ -1,0 +1,11 @@
+docker-compose -p compose run --rm testrunner bash -c "sleep 15 && go test -v github.com/nghialv/localjet/mongodb"
+
+Creating network "compose_default" with the default driver
+Creating compose_mongodb_1
+=== RUN   TestInit
+LOCALJET: Will dial mongo
+LOCALJET: Succeeded to dial mongo
+--- PASS: TestInit (60.00s)
+PASS
+ok  	github.com/nghialv/localjet/mongodb	60.010s
+docker-compose -p compose down &>/dev/null &

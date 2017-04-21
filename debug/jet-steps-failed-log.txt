@@ -1,0 +1,100 @@
+jet steps
+
+{StepStarted=step_name:"integration-mongodb"}
+{BuildImageStarted=image_name:"codeship_dep-mongodb" service_name:"dep-mongodb"}
+{BuildImageStdout=image_name:"codeship_dep-mongodb" service_name:"dep-mongodb"}: Step 1/2 : FROM golang:1.7.4-alpine3.5
+{BuildImageStdout=image_name:"codeship_dep-mongodb" service_name:"dep-mongodb"}:  ---> 3c89ae607c37
+{BuildImageStdout=image_name:"codeship_dep-mongodb" service_name:"dep-mongodb"}: Step 2/2 : RUN apk add --update bash
+{BuildImageStdout=image_name:"codeship_dep-mongodb" service_name:"dep-mongodb"}:  ---> Using cache
+{BuildImageStdout=image_name:"codeship_dep-mongodb" service_name:"dep-mongodb"}:  ---> 651dc3ae711d
+{BuildImageStdout=image_name:"codeship_dep-mongodb" service_name:"dep-mongodb"}: Successfully built 651dc3ae711d
+{BuildImageFinished=image_name:"codeship_dep-mongodb" service_name:"dep-mongodb"}
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: about to fork child process, waiting until server is ready for connections.
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: forked process: 20
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:14.524+0000 I CONTROL  [main] ***** SERVER RESTARTED *****
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:14.528+0000 I CONTROL  [initandlisten] MongoDB starting : pid=20 port=27017 dbpath=/data/db 64-bit host=d3974343c5cd
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:14.528+0000 I CONTROL  [initandlisten] db version v3.4.3
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:14.528+0000 I CONTROL  [initandlisten] git version: f07437fb5a6cca07c10bafa78365456eb1d6d5e1
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:14.528+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1t  3 May 2016
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:14.528+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:14.528+0000 I CONTROL  [initandlisten] modules: none
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:14.528+0000 I CONTROL  [initandlisten] build environment:
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:14.528+0000 I CONTROL  [initandlisten]     distmod: debian81
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:14.528+0000 I CONTROL  [initandlisten]     distarch: x86_64
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:14.528+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:14.528+0000 I CONTROL  [initandlisten] options: { net: { bindIp: "127.0.0.1", port: 27017, ssl: { mode: "disabled" } }, processManagement: { fork: true, pidFilePath: "/tmp/tmp.AwqWHWmr6m" }, systemLog: { destination: "file", logAppend: true, path: "/proc/1/fd/1" } }
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:14.532+0000 I STORAGE  [initandlisten]
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:14.532+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:14.532+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:14.532+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3474M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:14.707+0000 I CONTROL  [initandlisten]
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:14.707+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:14.707+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:14.707+0000 I CONTROL  [initandlisten]
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:14.777+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:14.843+0000 I INDEX    [initandlisten] build index on: admin.system.version properties: { v: 2, key: { version: 1 }, name: "incompatible_with_version_32", ns: "admin.system.version" }
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:14.843+0000 I INDEX    [initandlisten] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:14.845+0000 I INDEX    [initandlisten] build index done.  scanned 0 total records. 0 secs
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:14.845+0000 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.4
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:14.845+0000 I NETWORK  [thread1] waiting for connections on port 27017
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: child process started successfully, parent exiting
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:14.879+0000 I NETWORK  [thread1] connection accepted from 127.0.0.1:54746 #1 (1 connection now open)
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:14.879+0000 I NETWORK  [conn1] received client metadata from 127.0.0.1:54746 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 8 (jessie)"", architecture: "x86_64", version: "Kernel 4.9.13-moby" } }
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:14.881+0000 I -        [conn1] end connection 127.0.0.1:54746 (1 connection now open)
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}:
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}:
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: killing process with pid: 20
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:14.892+0000 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:14.892+0000 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:14.892+0000 I NETWORK  [signalProcessingThread] closing listening socket: 7
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:14.892+0000 I NETWORK  [signalProcessingThread] closing listening socket: 8
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:14.892+0000 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:14.892+0000 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:14.892+0000 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:14.892+0000 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:15.066+0000 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:15.067+0000 I CONTROL  [signalProcessingThread] now exiting
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:15.067+0000 I CONTROL  [signalProcessingThread] shutting down with code:0
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:15.067+0000 I CONTROL  [initandlisten] shutting down with code:0
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}:
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: MongoDB init process complete; ready for start up.
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}:
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:15.909+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/data/db 64-bit host=d3974343c5cd
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:15.909+0000 I CONTROL  [initandlisten] db version v3.4.3
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:15.909+0000 I CONTROL  [initandlisten] git version: f07437fb5a6cca07c10bafa78365456eb1d6d5e1
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:15.909+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1t  3 May 2016
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:15.909+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:15.909+0000 I CONTROL  [initandlisten] modules: none
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:15.909+0000 I CONTROL  [initandlisten] build environment:
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:15.909+0000 I CONTROL  [initandlisten]     distmod: debian81
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:15.909+0000 I CONTROL  [initandlisten]     distarch: x86_64
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:15.909+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:15.909+0000 I CONTROL  [initandlisten] options: {}
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:15.914+0000 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:15.914+0000 I STORAGE  [initandlisten]
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:15.914+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:15.914+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:15.914+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3474M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:16.441+0000 I CONTROL  [initandlisten]
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:16.441+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:16.441+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:16.441+0000 I CONTROL  [initandlisten]
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:16.443+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"mongodb"}: 2017-04-21T02:42:16.443+0000 I NETWORK  [thread1] waiting for connections on port 27017
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"dep-mongodb"}: === RUN   TestInit
+LOCALJET: Will dial mongo
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"dep-mongodb"}: LOCALJET: Failed to dial mongo.  no reachable servers
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"dep-mongodb"}: --- FAIL: TestInit (92.51s)
+	assertions.go:226: 
+                          
+	Error Trace:	mongo_test.go:13
+		
+	Error:      	Received unexpected error:
+		
+	            	no reachable servers
+FAIL
+{ContainerRunStdout=step_name:"integration-mongodb" service_name:"dep-mongodb"}: exit status 1
+FAIL	github.com/nghialv/localjet/mongodb	92.516s
+{ContainerRunError=step_name:"integration-mongodb" service_name:"dep-mongodb" exit_code:1}
+{StepFinished=step_name:"integration-mongodb" type:STEP_FINISHED_TYPE_ERROR}
